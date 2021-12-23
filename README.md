@@ -9,8 +9,8 @@ VITIS HLS를 사용한 VGG network의 5개 convolution 구현
 + 1 iteration 후 host에서 max pooling & zero padding 적용
 
 ## 실행 환경
-Build : AWS M5 instance
-Run : AWS F1 instance
++ Build : AWS M5 instance
++ Run : AWS F1 instance
 
 ## Build
 1. cnn_single or cnn_5_layers directory를 M5 instance로 copy
