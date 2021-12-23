@@ -29,7 +29,7 @@ $VITIS_DIR/tools/create_vitis_afi.sh
 ```
 5. Convert xclbin into AFI, (AWS S3 bucket 사용)
 ```
-$VITIS_DIR/tools/create_vitis_afi.sh -xclbin =[your synthesis directory]/cnn.xclbin -o=cnn -s3_bucket=[your bucket name] -s3_dcp_key=dcp -s3_logs_key= logs
+$VITIS_DIR/tools/create_vitis_afi.sh -xclbin =[your synthesis directory]/cnn.xclbin -o=cnn -s3_bucket=[your bucket name] -s3_dcp_key=dcp -s3_logs_key=logs
 ```
 6. Transfer to F1 instance
 
