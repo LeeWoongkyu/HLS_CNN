@@ -8,7 +8,7 @@ VITIS HLS를 사용한 VGG network의 5개 convolution 구현
   + 5 convolution x 1 iteration
   + SW와 HW에서 수행 후 각 convolution에 대해 결과 비교
 + cnn.cpp
-  + 5개 convolution을 병렬적으로 1회씩 수행
+  + 5개 convolution을 병렬적으로 1회 수행
 + cnn.h
   + 5개 convolution 각각의 dimension, tile size 정의
   + Tm, Tn = 16
@@ -19,7 +19,7 @@ VITIS HLS를 사용한 VGG network의 5개 convolution 구현
   + Conv1의 결과가 다음 interation의 conv2 input으로 이어짐
   + 각 iteration 후 host에서 max pooling & zero padding 수행
 + cnn.cpp
-  + 5개 convolution을 병렬적으로 1회씩 수행
+  + 5개 convolution을 병렬적으로 1회 수행
 + cnn.h
   + 5개 convolution 각각의 dimension, tile size 정의
   + Tm, Tn = 16
