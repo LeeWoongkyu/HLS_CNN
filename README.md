@@ -43,7 +43,7 @@ make run TARGET=hw_emu DEVICE=$AWS_PLATFORM
 make run TARGET=hw DEVICE=$AWS_PLATFORM
 $VITIS_DIR/tools/create_vitis_afi.sh
 ```
-5. Convert xclbin into AFI, (AWS S3 bucket 사용)
+5. Convert xclbin into AFI (AWS S3 bucket 사용)
 ```
 $VITIS_DIR/tools/create_vitis_afi.sh -xclbin =[your synthesis directory]/cnn.xclbin -o=cnn -s3_bucket=[your bucket name] -s3_dcp_key=dcp -s3_logs_key=logs
 ```
