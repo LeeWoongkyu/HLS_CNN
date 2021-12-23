@@ -2,6 +2,11 @@
 
 ## Introduction
 VITIS HLS를 사용한 VGG network의 5개 convolution 구현
+## Code explanation
++ cnn_single/src/
+++ cnn.cpp, host.cpp, cnn.h
++ cnn_5_layers/src/
+++ cnn.cpp, host.cpp, cnn.h
 ### cnn_single
 + 5개 convolution을 병렬적으로 1회씩 수행
 ### cnn_5_layers
