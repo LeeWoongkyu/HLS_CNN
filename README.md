@@ -34,7 +34,7 @@ VITIS HLS를 사용한 VGG network의 5개 convolution 구현
 cd cnn_single/
 ```
 ```
-cnn_5_layers
+cd cnn_5_layers
 ```
 2. sw_emu
 ```
