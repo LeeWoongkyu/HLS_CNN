@@ -5,18 +5,18 @@ VITIS HLS를 사용한 VGG network의 5개 convolution 구현
 ## Code explanation
 ### cnn_single
 + cnn.cpp
-* 5개 convolution을 병렬적으로 1회씩 수행
+  + 5개 convolution을 병렬적으로 1회씩 수행
 + host.cpp
-* 5 convolution x 1 iteration
-* SW와 HW에서 수행 후 각 convolution에 대해 결과 비교
+  + 5 convolution x 1 iteration
+  + SW와 HW에서 수행 후 각 convolution에 대해 결과 비교
 ### cnn_5_layers
 + cnn.cpp
-* 5개 convolution을 병렬적으로 1회씩 수행
+  + 5개 convolution을 병렬적으로 1회씩 수행
 + host.cpp
-* 5 convolution x 5 iterations
-* Iteration 5의 convolution 5에 대해 sw와 hw 결과 비교
-* Conv1의 결과가 다음 interation의 conv2 input으로 이어짐
-* 각 iteration 후 host에서 max pooling & zero padding 수행
+  + 5 convolution x 5 iterations
+  + Iteration 5의 convolution 5에 대해 sw와 hw 결과 비교
+  + Conv1의 결과가 다음 interation의 conv2 input으로 이어짐
+  + 각 iteration 후 host에서 max pooling & zero padding 수행
 
 ## 실행 환경
 + Build : AWS M5 instance
