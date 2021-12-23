@@ -29,7 +29,13 @@ VITIS HLS를 사용한 VGG network의 5개 convolution 구현
 + Run : AWS F1 instance
 
 ## Build
-1. cnn_single/ or cnn_5_layers/ directory를 M5 instance로 copy
+1. M5 instance에서 cnn_single/ or cnn_5_layers/ directory로 이동
+```
+cd cnn_single/
+```
+```
+cnn_5_layers
+```
 2. sw_emu
 ```
 make run TARGET=sw_emu DEVICE=$AWS_PLATFORM
